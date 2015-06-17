@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <package name="default" namespace="/" extends="struts-default">
+        <global-results>
+            <result name="error">/error.jsp</result>
+        </global-results>
+        <global-exception-mappings>
+            <exception-mapping exception="java.lang.Exception" result="error"/>
+        </global-exception-mappings>
+
+        <action name="student_login" class="joiner.action.StudentLoginAction">
+            <result name="input">/loginForStudent.html</result>
+            <result name="error">/errorForLogin.jsp</result>
+            <result name="success">/welcomeStudent.jsp</result>
+        </action>
+        <action name="organizer_login" class="joiner.action.OrganizerLoginAction">
+            <result name="input">/loginForOrganizer.html</result>
+            <result name="error">/error.jsp</result>
+            <result name="success">/create_event.jsp</result>
+        </action>
+        <action name = "create_activity" class = "joiner.action.CreateActivityAction">
+            <result name="input">/create_event.jsp</result>
+            <result name="error">/error.jsp</result>
+            <result name="success">/create_event.jsp</result>
+        </action>
+        <action name="search_activity" class="joiner.action.SearchActivityAction">
+            <result name="input">/welcomeStudent.jsp</result>
+            <result name="success">/searchResult.jsp</result>
+        </action>
+
+        <action name="scan_activities" class="joiner.action.ScanActivitiesAction">
+            <result name="success">/scanActivities.jsp</result>
+        </action>
+        <action name="activityInformation" class="joiner.action.ActivityDetailActionForOrg">
+            <result name="success">/activityInformation.jsp</result>
+        </action>
+
+        <!--<action name="activity_detail" class="joiner.action.ActivityDetailAction">-->
+            <!--<result name="success">/activityDetail.jsp</result>-->
+        <!--</action>-->
+
+        <action name="activity_detail_stu" class="joiner.action.ActivityDetailForStuAction">
+            <result name="success">/activityDetailForStu.jsp</result>
+        </action>
+
+        <action name="join_activity" class="joiner.action.JoinAction">
+            <result name="success">/successForJoin.jsp</result>
+            <result name="error">/errorForJoin.jsp</result>
+        </action>
+
+        <action name="see_joined" class="joiner.action.SeeJoinedAction">
+            <result name="success">/joinedActivities.jsp</result>
+        </action>
+    </package>
+</struts>
