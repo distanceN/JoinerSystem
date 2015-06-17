@@ -1,0 +1,57 @@
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Login For Organizer</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body>
+<div class="heading">
+    <div class="username" id="username">
+        <p>Organizer</p>
+    </div>
+</div>
+<div class="main_body">
+    <div class="form_info">
+        <form name="organizer_login" method="post" action="organizer_login" validate="true">
+        <div class="input-group">
+            <span class="input-group-addon">organizer id</span>
+            <input type="text" name="organizer.organizerId"
+                   class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <p>
+
+
+        </p>
+        <div class="input-group">
+            <span class="input-group-addon">password</span>
+            <input type="password" name="organizer.organizerPassword"
+                   class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <p>
+
+
+        </p>
+        <p style="text-align:center;">
+            <button class="btn" type="submit">OK</button>
+        </p>
+        <p>
+
+
+        </p>
+        <p style="text-align:center;">
+            <button class="btn" type="reset">Cancel</button>
+        </p>
+        </form>
+
+        <form action="index.html" validate="true">
+            <p style="text-align:center;">
+                <button class="btn" type="submit">Back</button>
+            </p>
+        </form>
+
+
+    </div>
+</div>
+</body>

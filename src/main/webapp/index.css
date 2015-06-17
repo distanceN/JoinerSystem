@@ -1,0 +1,122 @@
+body {
+    background-color: #99ccff;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+div {
+    display: inline-block;
+}
+.container {
+    display: inline;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.left {
+    background-color: #004c99;
+    margin: 10px;
+    width: 300px;
+    height: 670px;
+    float: left;
+}
+.right {
+    background-color: #004c99;
+    margin: 10px;
+    width: 900px;
+    height: 670px;
+    float: left;
+    position: absolute;
+}
+.img {
+    color: #004c99;
+    border: 2px solid #99ccff;
+    width: 130px;
+    height: 130px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+.cut-line {
+    border: 1px solid #99ccff;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.btn-1 {
+    background-color: #0025BB;
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    color: #99ccff;
+}
+
+.items {
+    width: 300px;
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.item {
+    background-color: #007fff;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 50px;
+    color: #99ccff;
+    cursor: pointer;
+}
+.text-create {
+    width: 900px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: xx-large;
+    color: #99ccff;
+}
+.line-right-1 {
+    border: 1px solid #99ccff;
+    width: 890px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.event-name {
+    width: 800px;
+    margin-left: 50px;
+    margin-top: 20px;
+    color: #99ccff;
+}
+.line-right-2 {
+    margin-top: 130px;
+    border: 1px solid #99ccff;
+    width: 890px;
+    margin-left: 5px;
+}
+
+.btn-send {
+    height: 40px;
+    width: 150px;
+    background-color: #3399ff;
+    color: #cce5ff;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    margin-right: 30px;
+}
+
+.btn-cancel {
+    height: 40px;
+    width: 150px;
+    background-color: #3399ff;
+    color: #cce5ff;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    margin-right: 30px;
+}
