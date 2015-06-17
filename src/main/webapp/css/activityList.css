@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #007fff;
+}
+
+.heading {
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    padding: 5px 4px;
+    z-index: 1;
+}
+
+.back_img {
+    height: 100%;
+    width: 5%;
+    float: left;
+    text-align: center;
+    font-size: 65px;
+    padding-top: 5px;
+}
+
+.username {
+    color: #007fff;
+    height: 100%;
+    width: 40%;
+    float: left;
+    font-size: 55px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.search_img {
+    height: 100%;
+    width: 10%;
+    float: right;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 2px;
+}
+
+.search_img button[type="Submit"] {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    background-color: white;
+}
+
+.input_text {
+    height: 100%;
+    width: 45%;
+    float: right;
+    text-align: right;
+    padding: 4px 0;
+    font-size: 50px;
+}
+
+.input_text input[type="text"] {
+    background-color: #eeeeee;
+    height: 100%;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.main_body {
+    padding-top: 105px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.list {
+    background-color: #46b8da;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    border: none;
+    overflow: hidden;
+}
+
+.head_img {
+    background-color: #269abc;
+    height: 100%;
+    width: 20%;
+    font-size: 100px;
+    padding-top: 50px;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+
+.activity_title {
+    height: 100%;
+    width: 50%;
+    padding-left: 10px;
+    padding-top: 5px;
+    float: left;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.activity_title button {
+    height: 100%;
+    width: 160%;
+    background: transparent;
+    font-size: 60px;
+    color: #204d74;
+}
+
+
+.activity_title a {
+    color: #204d74;
+    text-decoration: none;
+}
+
+.release_time {
+    color: #444444;
+    height: 100%;
+    width: 30%;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 15px;
+    padding-top: 200px;
+    float: right;
+}
+
+.footing {
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    bottom: 0px;
+    position: fixed;
+}
+
+.down_img {
+    height: 100px;
+    width: 30px;
+    margin: 0 auto;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.down_img a {
+    text-decoration: none;
+    color: #005fff;
+}
