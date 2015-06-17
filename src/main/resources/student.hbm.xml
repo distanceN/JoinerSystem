@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="joiner.entity">
+    <class name="Student" table="student">
+        <id name="studentId" column="student_id">
+            <generator class="identity"/>
+        </id>
+        <property name="studentName" column="student_name"></property>
+        <property name="studentPassword" column="student_password"></property>
+        <!--<set-->
+                <!--name="activities"-->
+                <!--table="student_activity"-->
+                <!--lazy="false"-->
+                <!--cascade="save-update"-->
+                <!-->-->
+            <!--<key-->
+                    <!--column="student_id"-->
+                    <!-->-->
+            <!--</key>-->
+            <!--<many-to-many-->
+                    <!--class="joiner.entity.Activity"-->
+                    <!--column="activity_id"-->
+                    <!--outer-join="auto"/>-->
+        <!--</set>-->
+    </class>
+</hibernate-mapping>

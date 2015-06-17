@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="joiner.entity">
+    <class name="Activity" table="activity">
+        <id name="activityId" column="activity_id">
+            <generator class="identity"/>
+        </id>
+        <property name="activityName" column="activity_name"></property>
+        <property name="organizerName" column="organizer_name"></property>
+        <property name="time" column="activity_time"></property>
+        <property name="place" column="activity_place"></property>
+        <property name="description" column="activity_discript"></property>
+        <property name="post" type="boolean" column="activity_isPost"></property>
+
+        <!--<set name="students"-->
+             <!--table="student_activity"-->
+             <!--lazy="false"-->
+             <!--cascade="save-update">-->
+        <!--<key column="activity_id"></key>-->
+        <!--<many-to-many-->
+            <!--class="joiner.entity.Student"-->
+            <!--column="student_id"-->
+            <!--outer-join="auto"/>-->
+        <!--</set>-->
+    </class>
+</hibernate-mapping>
