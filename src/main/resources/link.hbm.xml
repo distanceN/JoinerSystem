@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="joiner.entity">
+    <class name="Link" table="student_activity">
+        <composite-id>
+            <key-property name="activityId" column="activity_id"/>
+            <key-property name="studentId" column="student_id"/>
+        </composite-id>
+    </class>
+</hibernate-mapping>
